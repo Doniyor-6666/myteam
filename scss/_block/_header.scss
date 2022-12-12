@@ -1,0 +1,53 @@
+header {
+  background-color: $midnightGreen;
+  padding: 73px 0 129px;
+}
+.myteam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__link:hover {
+    color: #f67e7e;
+    transition: 0.5s;
+  }
+  &__btn {
+    @include transparentBtn;
+  }
+  &__hamburger {
+    display: none;
+  }
+  @media only screen and (max-width: 769px) {
+    &__box {
+      gap: 48px;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    &__logo {
+      width: 80%;
+    }
+    &__list {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+    &__hamburger {
+      display: flex;
+    }
+  }
+}

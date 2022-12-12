@@ -1,0 +1,21 @@
+@mixin transparentBtn {
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $White;
+  border: 2px solid $White;
+  border-radius: 24px;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    color: #002529;
+    background: $White;
+    border-radius: 24px;
+    transition: 0.5s;
+  }
+  @media only screen and (max-width: 592px) {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}

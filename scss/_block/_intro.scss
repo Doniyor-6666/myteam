@@ -1,0 +1,77 @@
+.intro {
+  &__main {
+    background-color: $midnightGreen;
+    background-image: url("../../img/intro-left-bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  &__wrapper {
+    padding-bottom: 250px;
+    background-image: url("../../img/intro-bottom-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: $White;
+    &--span {
+      color: $LightCoral;
+    }
+  }
+  &__box {
+    width: 40%;
+  }
+  &__hr {
+    width: 49px;
+    height: 4px;
+    background-color: $RaptureBlue;
+    border: none;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $White;
+
+    margin-top: 80px;
+  }
+  @media only screen and (max-width: 769px) {
+    &__wrapper {
+      background-position: bottom center;
+      flex-direction: column;
+    }
+    &__main {
+      background-image: none;
+    }
+    &__content {
+      width: 50%;
+    }
+    &__header {
+      font-weight: 700;
+      font-size: 8.5vw;
+      line-height: 56px;
+      text-align: center;
+      margin-bottom: -30px;
+    }
+    &__box {
+      text-align: center;
+      width: 80%;
+    }
+    &__hr {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    &__box {
+      width: 95%;
+    }
+  }
+}

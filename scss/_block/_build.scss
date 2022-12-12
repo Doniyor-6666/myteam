@@ -1,0 +1,91 @@
+.build {
+  padding: 140px 0;
+  background-color: $DarkGreen;
+  background-image: url("../../img/Group8.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  &__wrapper {
+    display: flex;
+    column-gap: 125px;
+  }
+  &__content {
+    width: 45%;
+  }
+  &__line {
+    width: 50px;
+    height: 4px;
+    background-color: $LightCoral;
+    border: none;
+    margin-bottom: 54px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $White;
+  }
+  &__list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__item {
+    display: flex;
+    gap: 23px;
+  }
+  &__img {
+    width: 72px;
+    height: 72px;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: $LightCoral;
+  }
+  &__subtext {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: $White;
+    margin-top: 16px;
+    opacity: 0.8;
+  }
+  @media only screen and (max-width: 769px) {
+    padding: 100px 0;
+    background-position: top right;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content {
+      width: 80%;
+      margin-bottom: 64px;
+    }
+    &__line {
+      margin-bottom: 32px;
+    }
+    &__title {
+      font-size: 6.7vw;
+      line-height: 48px;
+    }
+    &__list {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 769px) {
+    padding: 64px 0;
+  }
+  &__title {
+    width: 70%;
+  }
+  &__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__box {
+    width: 110%;
+  }
+}
